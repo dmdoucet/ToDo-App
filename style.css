@@ -44,7 +44,7 @@ body {
     background: #FAEED1;
     border-radius: 30px;
     padding-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 input {
@@ -65,4 +65,38 @@ button {
     font-size: 18px;
     cursor: pointer;
     border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 15px 5px 15px 45px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 1px;
+}
+
+ul li.checked {
+    color: #B2A59B;
+   text-decoration: line-through; 
+}
+
+ul li.checked::before {
+    background-color: #607274;
+    background-repeat:no-repeat;
+    background-image: url(./images/check-solid.png);
+    background-size: 1rem;
 }
