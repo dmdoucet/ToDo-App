@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 40px;
 }
 
@@ -44,7 +44,7 @@ body {
     background: #FAEED1;
     border-radius: 30px;
     padding-left: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 input {
